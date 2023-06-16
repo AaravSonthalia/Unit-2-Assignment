@@ -1,0 +1,29 @@
+<!--Start code in javascript-->
+<script>
+    // creating random number and guess variable
+    let randomNumber = Math.floor((Math.random() * 100) + 1);
+    let guess;
+
+    // while loop
+    while (guess != randomNumber)
+    {
+        // getting user guess
+        guess = prompt("Guess the number:");
+
+        // if guess is too high
+        if (guess > randomNumber)
+        {
+            alert("Your guess is too high, try again.");
+        }
+        // if guess is too low
+        else if (guess < randomNumber)
+        {
+            alert("Your guess is too low, try again.");
+        }
+        // if they got it correct
+        else
+        {
+            alert("Correct!");
+        }
+    }
+</script>
